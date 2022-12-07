@@ -1,15 +1,12 @@
 <resources>
-    <string name="app_name">lv6_android</string>
+    <string name="app_name">LV6_LukaBakula</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="bruno_petkovic_fragment">Bruno Petković</string>
     <string name="mateo_kovacevic_fragment">Mateo Kovačević</string>
     <string name="luka_modric_fragment">Luka Modrić</string>
-    <string name="borna_barisic_fragment">Borna Barišić</string>
+    <string name="borna_barisic_fragment">Marko Livaja</string>
     <string name="naprijed_fragment">Naprijed</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="natrag_fragment">Natrag</string>
     <string name="text_fragment">Najbolji nogometaš Hrvatske nogometne reprezentacije je: </string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
 </resources>

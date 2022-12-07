@@ -7,12 +7,10 @@
 
     <fragment
         android:id="@+id/radioFragment"
-        android:name="hr.ferit.lukabakula.LV6.RadioFragment"
         android:label="fragment_radio"
         tools:layout="@layout/fragment_radio" />
     <fragment
         android:id="@+id/textViewFragment"
-        android:name="hr.ferit.lukabakula.LV6.TextViewFragment"
         android:label="fragment_text_view"
         tools:layout="@layout/fragment_text_view" />
 

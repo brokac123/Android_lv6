@@ -1,6 +1,6 @@
 package com.lukabakula.lv6_android
 
-import android.annotation.SuppressLint
+
 import android.os.Bundle
 import android.provider.MediaStore.Audio.Radio
 import android.view.LayoutInflater
@@ -16,31 +16,29 @@ import androidx.fragment.app.FragmentTransaction
 
 
 class RadioFragment : Fragment() {
+
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_radio, container, false)
-
         val naprButton : Button = view.findViewById(R.id.naprijedButton)
+
 
         naprButton.setOnClickListener{
             val radioGroup = view.findViewById<RadioGroup>(R.id.radioGroup)
             val radioButton = view.findViewById<RadioButton>(radioGroup.checkedRadioButtonId)
-
-            val bundle = Bundle()
-            bundle.putString("data", radioButton.text.toString())
             val fragment = TextViewFragment()
+            val bundle = Bundle()
+            bundle.putString("BUTTON", radioButton.text.toString())
             fragment.arguments = bundle
+            val transaction = fragmentManager?.beginTransaction()
+            transaction?.replace(R.id.nav_container,fragment)?.commit()
 
-            val fragmentTransaction : FragmentTransaction? = activity?.supportFragmentManager?.beginTransaction()
-            fragmentTransaction?.replace(R.id.nav_container, fragment)
-            fragmentTransaction?.commit()
         }
         return view
     }
 }
-
 
 
